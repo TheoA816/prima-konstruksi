@@ -1,0 +1,147 @@
+/* TEXT */
+.slogan {
+  width: 50vw;
+  padding-left: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  line-height: normal;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.special {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+.subtitle {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.desc {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.divider {
+  border-bottom: 0.1rem solid #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .slogan {
+    gap: 1rem;
+  }
+  .title {
+    font-size: 3.3rem;
+  }
+  .subtitle {
+    font-size: 2.3rem;
+  }
+  .desc {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .slogan {
+    gap: 1rem;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  .desc {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 774px) {
+  .slogan {
+    padding-left: 0;
+  }
+  .title {
+    font-size: 3.5rem;
+  }
+  .subtitle {
+    font-size: 2.5rem;
+  }
+  .desc {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 610px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  .desc {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .title {
+    font-size: 1.7rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .desc {
+    font-size: 0.8rem;
+  }
+}
+
+/* LAYOUT */
+/* cover should be full screen */
+.container {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* BG take up half the space */
+.background {
+  width: 50vw;
+  height: 100%;
+}
+
+@media (max-width: 774px) {
+  /* BG is central on screen */
+  .background {
+    width: fit-content;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    opacity: 0.3;
+  }
+
+  .image {
+    min-width: 500px;
+  }
+
+  /* slogan lies on top of bg centrally */
+  .slogan {
+    width: 80vw;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

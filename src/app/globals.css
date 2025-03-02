@@ -1,10 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --background: #1c1c1c;
   --foreground: #ffffff;
+
+  /* NOTES since variables not load preprocess for media queries */
+  /* --mobile: 774px */
 }
 
 body {
