@@ -19,7 +19,7 @@ const Cover = () => {
       <div className={styles.background}>
         <Image
           className={styles.image}
-          src="/cover_bg.jpg"
+          src="/home_bg.jpg"
           alt="Cover Background"
           width={1000}
           height={1100}
