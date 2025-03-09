@@ -1,0 +1,11 @@
+.container {
+  padding: 0.5rem 0;
+
+  border-top: 0.01rem solid #ffffff;
+  border-bottom: 0.01rem solid #ffffff;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 500;
+}
