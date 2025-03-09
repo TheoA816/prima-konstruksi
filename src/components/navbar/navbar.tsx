@@ -6,11 +6,7 @@ import styles from "./navbar.module.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useMediaQuery } from "@mui/material";
-import { Manrope } from "next/font/google";
-
-const manrope = Manrope({
-  subsets: ["latin"],
-});
+import { manrope } from "@/fonts/fonts";
 
 const NavBar = () => {
   const [isVisible, setIsVisible] = useState(true);
